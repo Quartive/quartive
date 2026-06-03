@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head prefix="og: https://ogp.me/ns#">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css\style.css">
+    <link rel="stylesheet" type="text/css" href="css\reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,slnt,wdth,wght,GRAD@6..144,-10..0,25..151,1..1000,0..100&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+2:wght@100..900&display=swap" rel="stylesheet">
+    <title>Quartive</title>
+    <link rel="icon" type="image/vnd.microsoft.icon" sizes="32x32" href="image/icon/favicon/favicon_mc.ico">
+    <!--ここからOGP設定-->
+    <meta property="og:image" content="https://quartive.github.io/quartive/ogp/ogp.png" />
+    <meta name="description" content="Quartiveの公式サイトです">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@unvata_" />
+    <meta property="og:site_name" content="Quartive" />
+    <meta property="og:description" content="Quartiveの公式サイトです" />
+
+    <!-- ここだけ毎回変える -->
+    <meta property="og:type" content="article/video/website" />
+    <meta property="og:title" content="" />
+    <meta property="og:url" content="https://quartive.github.io/quartive/" />
+
+</head>
+
+<body>
+    <header class="subpage-hd">
+        <nav>
+            <ul>
+                <li class="current"><a href="index.html" class="m">Main</a></li>
+                <li><a href="https://quartive.github.io/quartive/index.html#abt-mokuji" class="m">About</a></li>
+                <li><a href="gallery.html" class="m">Gallery</a></li>
+                <li><a href="works.html" class="m">Works</a></li>
+
+            </ul>
+        </nav>
+
+    </header>
+
+    <div class="main">
+        <!--本記事-->
+        <div class="gallerybox">
+            <div class="gallery-title">
+                <h2 class="michroma" style="text-align:center">GALLERY</h2>
+            </div>
+            <div class="gallery-table"> <!--画像は300x400-->
+
+                <div class="gallery-block">
+                    <img class="gallery-img" src="works-img/w2.jpg">
+                    <div class="gallery-txt">
+                        <p class="m">甘霜ヱン様　立ち絵</p>
+                        <p class="mlight">ダウナー眼鏡男子がコンセプト</p>
+                    </div>
+                </div>
+
+                <div class="gallery-block">
+                    <img class="gallery-img" src="works-img/w1.jpg">
+                    <div class="gallery-txt">
+                        <p class="m">高校文化祭</p>
+                        <p class="mlight">文化祭のVJ映像を制作しました</p>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+
+        <!--フッター-->
+        <footer class="footer">
+
+            <div class="copylight">
+                <p class="copy-txt mlight">© 2025 Quartive All rights reserved.</p>
+                <img src="movie/footer/sky.gif" class="sky">
+            </div>
+        </footer>
+
+        <a class="pagetop" href="#">
+            <div class="pagetop__arrow"></div>
+        </a>
+
+        <a id="js-share-twitter" class="sharex" href="" target="_blank">
+            <div class="share-bt">
+                <img src="ogp/logo-white.png" class="share-x-img">
+            </div>
+        </a>
+    </div>
+</body>
+
+<script>
+    const share_url = location.href;
+    const share_hostpath = location.host + location.pathname;
+    const share_title = document.title;
+
+    const share_twitter = document.getElementById("js-share-twitter");
+    share_twitter.setAttribute(
+        "href",
+        "https://twitter.com/share?url=" + share_url + "&text=" + share_title
+    );
+</script>
+
+</html>
